@@ -2,6 +2,8 @@
 
 FTGL を使って、3D 空間に日本語を描画しています。
 
+![tmp 0](https://user-images.githubusercontent.com/7226237/222881119-2301304c-a3bb-460a-a487-b2302d6d3bf6.png)
+
 ### ビルド
 
 ```sh
