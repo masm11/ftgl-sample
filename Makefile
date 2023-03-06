@@ -10,4 +10,8 @@ clean:
 	rm -f offscreen tmp.mpg
 
 run:
-	./offscreen 1 120 512 384 4
+	./offscreen 1 120 512 384 6
+	for i in $$(seq 0 9); do mv tmp.$$i.png tmp.00$$i.png; done
+	for i in $$(seq 10 99); do mv tmp.$$i.png tmp.0$$i.png; done
+	convert tmp.???.png tmp.gif
+	rm -fr tmp.???.png
